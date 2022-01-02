@@ -43,13 +43,12 @@ const resolvers = {
 // definition and your set of resolvers.
 const server = new ApolloServer({ typeDefs, resolvers });
 console.log(`
-   What
-    📭  Query at https://studio.apollographql.com/dev
-  `);
+   ${process.env.PORT || 4000}`);
 
 // The `listen` method launches a web server.
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
   console.log(`
+  no
     🚀  Server is ready at ${url}
     📭  Query at https://studio.apollographql.com/dev
   `);
